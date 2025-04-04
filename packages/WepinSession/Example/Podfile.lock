@@ -1,0 +1,35 @@
+PODS:
+  - WepinCommon (1.1.0)
+  - WepinNetwork (1.1.0):
+    - WepinCommon (~> 1.1.0)
+  - WepinSession (1.1.0):
+    - WepinCommon (~> 1.1.0)
+    - WepinNetwork (~> 1.1.0)
+    - WepinStorage (~> 1.1.0)
+  - WepinStorage (1.1.0)
+
+DEPENDENCIES:
+  - WepinCommon (from `../../WepinCommon`)
+  - WepinNetwork (from `../../WepinNetwork`)
+  - WepinSession (from `../`)
+  - WepinStorage (from `../../WepinStorage`)
+
+EXTERNAL SOURCES:
+  WepinCommon:
+    :path: "../../WepinCommon"
+  WepinNetwork:
+    :path: "../../WepinNetwork"
+  WepinSession:
+    :path: "../"
+  WepinStorage:
+    :path: "../../WepinStorage"
+
+SPEC CHECKSUMS:
+  WepinCommon: ceb4c8e43f235feeee65aaadd2a40771458253ca
+  WepinNetwork: ddb30dfd053f8aad96141450d06c83d5488eb784
+  WepinSession: a65158d425f97d4e801e058c52568730503394e0
+  WepinStorage: 33b040ced21cfdc07bfd46ac75ba4e41e9568975
+
+PODFILE CHECKSUM: 6467a47c00f1be0dce1da1d644e9dbba1e299fc4
+
+COCOAPODS: 1.16.2

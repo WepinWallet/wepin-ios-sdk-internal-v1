@@ -1,0 +1,16 @@
+PODS:
+  - WepinStorage (1.0.1)
+
+DEPENDENCIES:
+  - WepinStorage (from `../`)
+
+EXTERNAL SOURCES:
+  WepinStorage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WepinStorage: f6f45972bd834e170f1a753e1453e78ab8673858
+
+PODFILE CHECKSUM: c4687f46c665c27dc1317249d5fa2bdc83e1abe1
+
+COCOAPODS: 1.16.2

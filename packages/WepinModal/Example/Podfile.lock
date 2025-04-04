@@ -1,0 +1,16 @@
+PODS:
+  - WepinModal (1.0.1)
+
+DEPENDENCIES:
+  - WepinModal (from `../`)
+
+EXTERNAL SOURCES:
+  WepinModal:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WepinModal: a8f17d2855c4902477f4fdbebce37a8c909b1019
+
+PODFILE CHECKSUM: 5b1631ac75be16e60bdbb3df16bcf55682b4bc77
+
+COCOAPODS: 1.16.2

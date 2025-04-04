@@ -1,0 +1,22 @@
+PODS:
+  - WepinCommon (1.0.1)
+  - WepinNetwork (1.0.1):
+    - WepinCommon (~> 1.0.1)
+
+DEPENDENCIES:
+  - WepinCommon (from `../../WepinCommon`)
+  - WepinNetwork (from `../`)
+
+EXTERNAL SOURCES:
+  WepinCommon:
+    :path: "../../WepinCommon"
+  WepinNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WepinCommon: 842f0cd9fcc95dadf4e2e1b67cda988e0232d81e
+  WepinNetwork: 9929ba44429a09f18d8e29b09bb940b5a08cbf19
+
+PODFILE CHECKSUM: f4c1d9bad358d7d41f84f9cccfeca81188cfab88
+
+COCOAPODS: 1.16.2
