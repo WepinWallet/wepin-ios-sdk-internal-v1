@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WepinCommon'
-  s.version          = '0.1.0-beta'
+  s.version          = '0.1.1-beta'
   s.summary          = 'Wepin iOS Common SDK'
   s.swift_version    = '5.0'
 

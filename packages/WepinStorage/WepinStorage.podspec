@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WepinStorage'
-  s.version          = '0.1.0-beta'
+  s.version          = '0.1.1-beta'
   s.summary          = 'A short description of WepinStorage.'
   s.swift_version    = '5.0'
 
