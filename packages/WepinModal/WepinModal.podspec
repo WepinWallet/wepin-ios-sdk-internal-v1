@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'WepinModal/Classes/**/*'
+  s.source_files = 'packages/WepinModal/WepinModal/Classes/**/*'
   
 #  s.public_header_files = 'WepinModal/Classes/ObjC/**/*.h'
   
