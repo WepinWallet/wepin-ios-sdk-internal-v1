@@ -31,9 +31,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'WepinCommon/Classes/**/*'
+  s.source_files = 'packages/WepinCommon/WepinCommon/Classes/**/*'
   
-  s.public_header_files = 'WepinCommon/Classes/ObjC/**/*.h'
+  s.public_header_files = 'packages/WepinCommon/WepinCommon/Classes/ObjC/**/*.h'
   
   # s.resource_bundles = {
   #   'WepinCommon' => ['WepinCommon/Assets/*.png']
