@@ -41,5 +41,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'WepinCommon', '~> 1.1.0'
+   # s.dependency 'WepinCommon', '~> 1.1.0'
+   pod 'WepinCommon', '0.1.0-beta'
+
 end
