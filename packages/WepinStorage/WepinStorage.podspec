@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'packages/WepinStorage/WepinStorage/Classes/**/*'
+  s.source_files = 'WepinStorage/Classes/**/*'
   
   s.module_name = 'WepinStorage'
   
