@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WepinNetwork'
-  s.version          = '0.1.1-beta'
+  s.version          = '1.1.0'
   s.summary          = 'Wepin iOS Network SDK'
   s.swift_version    = '5.0'
 
@@ -41,7 +41,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   # s.dependency 'WepinCommon', '~> 1.1.0'
-   s.dependency 'WepinCommon', '0.1.1-beta'
+   s.dependency 'WepinCommon', '~> 1.1.0'
+   # s.dependency 'WepinCommon', '0.1.1-beta'
 
 end
