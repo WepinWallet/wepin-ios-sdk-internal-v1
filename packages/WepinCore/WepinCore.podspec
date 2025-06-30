@@ -33,10 +33,10 @@ TODO: Add long description of the pod here.
 
   # pod lib lint 할때 path : 로컬 저장소 기준의 path로 설정할것...lint 이상 없으면 아래경로로 수정 후 
   # 리포지토리에 push 후 pod trunk push 할것
-  s.source_files = 'WepinCore/Classes/**/*.{swift,h,m,mm}'
+  # s.source_files = 'WepinCore/Classes/**/*.{swift,h,m,mm}'
 
   # pod trunk push 할때 path : 리포지토리 기준의 path로 설정할것
-  # s.source_files = 'packages/WepinCore/WepinCore/Classes/**/*'
+  s.source_files = 'packages/WepinCore/WepinCore/Classes/**/*'
 
   s.module_name = 'WepinCore'
   
