@@ -103,12 +103,12 @@ public class WepinAttributeWithProviders : Codable {
     public var defaultCurrency: String
     public var loginProviders: [String]
 
-    public init(defaultLanguage: String = "en",
-                defaultCurrency: String = "USD",
+    public init(defaultLanguage: String?,
+                defaultCurrency: String?,
                 loginProviders: [String]? = []) {
         self.loginProviders = loginProviders ?? []
-        self.defaultLanguage = defaultLanguage
-        self.defaultCurrency = defaultCurrency
+        self.defaultLanguage = defaultLanguage ?? "en"
+        self.defaultCurrency = defaultCurrency ?? "USD"
     }
     
     func toDictionary() -> [String: AnyCodable] {

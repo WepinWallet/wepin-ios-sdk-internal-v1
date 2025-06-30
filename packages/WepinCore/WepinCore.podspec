@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint WepinModal.podspec' to ensure this is a
+# Be sure to run `pod lib lint WepinSession.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'WepinModal'
+  s.name             = 'WepinCore'
   s.version          = '1.1.2'
-  s.summary          = 'Wepin iOS Modal SDK'
+  s.summary          = 'A short description of WepinCore.'
   s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results.
@@ -31,21 +31,20 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '13.0'
 
-
   # pod lib lint 할때 path : 로컬 저장소 기준의 path로 설정할것...lint 이상 없으면 아래경로로 수정 후 
   # 리포지토리에 push 후 pod trunk push 할것
-  # s.source_files = 'WepinModal/Classes/**/*'
+  s.source_files = 'WepinCore/Classes/**/*.{swift,h,m,mm}'
 
   # pod trunk push 할때 path : 리포지토리 기준의 path로 설정할것
-  s.source_files = 'packages/WepinModal/WepinModal/Classes/**/*'
+  # s.source_files = 'packages/WepinCore/WepinCore/Classes/**/*'
 
-#  s.public_header_files = 'WepinModal/Classes/ObjC/**/*.h'
+  s.module_name = 'WepinCore'
   
   # s.resource_bundles = {
-  #   'WepinModal' => ['WepinModal/Assets/*.png']
+  #   'WepinSession' => ['WepinSession/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'WepinCommon', '~> 1.1.2'
 end

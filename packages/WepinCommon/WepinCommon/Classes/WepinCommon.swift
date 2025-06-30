@@ -10,7 +10,7 @@ import Foundation
             return .DEV
         } else if appKey.hasPrefix("ak_stage_") {
             return .STAGE
-        } else if appKey.hasPrefix("ak_prod_") {
+        } else if appKey.hasPrefix("ak_live_") {
             return .PROD
         }
         return nil

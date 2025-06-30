@@ -126,7 +126,7 @@ public struct JSResponse: Codable {
         do {
             let jsonData = try encoder.encode(self)
             if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print("##### [Response] \(jsonString)")
+//                print("##### [Response] \(jsonString)")
                 return jsonString
             }
         } catch {
@@ -175,6 +175,8 @@ public struct AnyCodable: Codable {
             try container.encode(boolVal)
         } else if let arrayVal = value as? [AnyCodable] {
             try container.encode(arrayVal)
+        } else if let stringArrayVal = value as? [String] {
+            try container.encode(stringArrayVal)
         } else if let dictVal = value as? [String: AnyCodable] {
             try container.encode(dictVal)
         } else {

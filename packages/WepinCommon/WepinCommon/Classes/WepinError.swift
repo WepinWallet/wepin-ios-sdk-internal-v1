@@ -35,6 +35,11 @@ public enum WepinError: Error, LocalizedError {
     case deprecated(String)
     case requiredEmailVerified
     case notConnectedInternet
+    case notSupportedNetwork
+    case alreadyLogout
+    case invalidEmailDomain
+    case failedSendEmail
+    case invalidViewController
     case unknown(String)
 
     public var errorDescription: String? {
@@ -109,6 +114,16 @@ public enum WepinError: Error, LocalizedError {
             return "Not Connected To Internet"
         case .userCanceled:
             return "User Canceled"
+        case .notSupportedNetwork:
+            return "Not Supported Network"
+        case .alreadyLogout:
+            return "Already Logout"
+        case .invalidEmailDomain:
+            return "Invalid Email Domain"
+        case .failedSendEmail:
+            return "Failed Send Email"
+        case .invalidViewController:
+            return "Invalid ViewController"
         }
     }
 
@@ -149,6 +164,11 @@ public enum WepinError: Error, LocalizedError {
         case .requiredEmailVerified: return WepinErrorCode.requiredEmailVerified.rawValue
         case .notConnectedInternet: return WepinErrorCode.notConnectedInternet.rawValue
         case .userCanceled: return WepinErrorCode.userCanceled.rawValue
+        case .notSupportedNetwork: return WepinErrorCode.notSupportedNetwork.rawValue
+        case .alreadyLogout: return WepinErrorCode.alreadyLogout.rawValue
+        case .invalidEmailDomain: return WepinErrorCode.invalidEmailDomain.rawValue
+        case .failedSendEmail: return WepinErrorCode.failedSendEmail.rawValue
+        case .invalidViewController: return WepinErrorCode.invalidViewController.rawValue
         }
     }
     /// NSError conversion
@@ -194,6 +214,11 @@ public enum WepinError: Error, LocalizedError {
     case deprecated = 1031
     case requiredEmailVerified = 1032
     case notConnectedInternet = 1033
+    case notSupportedNetwork = 1034
+    case alreadyLogout = 1035
+    case invalidEmailDomain = 1036
+    case failedSendEmail = 1037
+    case invalidViewController = 1038
     case unknown = 1099
 }
 
@@ -236,6 +261,11 @@ public enum WepinError: Error, LocalizedError {
         case WepinErrorCode.requiredEmailVerified.rawValue: error = .requiredEmailVerified
         case WepinErrorCode.notConnectedInternet.rawValue: error = .notConnectedInternet
         case WepinErrorCode.userCanceled.rawValue: error = .userCanceled
+        case WepinErrorCode.notSupportedNetwork.rawValue: error = .notSupportedNetwork
+        case WepinErrorCode.alreadyLogout.rawValue: error = .alreadyLogout
+        case WepinErrorCode.invalidEmailDomain.rawValue: error = .invalidEmailDomain
+        case WepinErrorCode.failedSendEmail.rawValue: error = .failedSendEmail
+        case WepinErrorCode.invalidViewController.rawValue: error = .invalidViewController
         default: error = .unknown(message)
         }
         return error.asNSError
