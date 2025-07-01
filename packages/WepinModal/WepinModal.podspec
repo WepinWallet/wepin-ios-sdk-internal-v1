@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WepinModal'
-  s.version          = '1.1.2'
+  s.version          = '1.1.2-beta'
   s.summary          = 'Wepin iOS Modal SDK'
   s.swift_version    = '5.0'
 

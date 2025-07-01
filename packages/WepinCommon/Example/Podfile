@@ -3,7 +3,8 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'WepinCommon_Example' do
-  pod 'WepinCommon', :path => '../'
+#  pod 'WepinCommon', :path => '../'
+pod 'WepinCommon', '~> 1.1.2'
 
   target 'WepinCommon_Tests' do
     inherit! :search_paths

@@ -5,13 +5,17 @@ import SafariServices
 public class WepinModal: NSObject, WKScriptMessageHandler, WKNavigationDelegate, WKUIDelegate {
     private var webView: WKWebView?
     private var viewController: UIViewController?
-    private var modalVC: UIViewController?
+    public private(set) var modalVC: UIViewController?
     private var jsProcessor: ((String, WKWebView, @escaping (String) -> Void) -> Void)?
     
     private var overlayWindow: UIWindow?
     
     private var isModalActive: Bool = false
     private var isModalClosing: Bool = false
+
+    public func getCurrentModalViewController() -> UIViewController? {
+        return modalVC
+    }
     
     public func openModal(on parent: UIViewController?, url: String, jsProcessor: @escaping (String, WKWebView, @escaping (String) -> Void) -> Void) {
         if isModalClosing {
